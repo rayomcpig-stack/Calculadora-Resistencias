@@ -1,11 +1,11 @@
-
+"""
 Calculadora de resistencias equivalentes (series E12 / E24)
 -----------------------------------------------------------
 Encuentra la mejor combinación de 1, 2 o 3 resistencias comerciales
 (serie, paralelo y mixtas) para aproximar un valor objetivo.
 
 Ejecutar:  streamlit run app.py
-
+"""
 import numpy as np
 import streamlit as st
 
