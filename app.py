@@ -6,6 +6,7 @@ Encuentra la mejor combinación de 1, 2 o 3 resistencias comerciales
 
 Ejecutar:  streamlit run app.py
 """
+
 import numpy as np
 import streamlit as st
 
@@ -293,6 +294,21 @@ div.stButton > button[kind="primary"]:focus-visible { outline: 3px solid #2F6FED
 .badge { display: inline-block; background: var(--c); color: #fff; font-weight: 700;
   border-radius: 999px; padding: .2rem .75rem; font-size: .95rem; }
 .row .lab { display: block; color: #4A5873; font-size: .82rem; margin-top: .25rem; }
+
+/* Panel de entrada: colores forzados para que se lea también con el tema oscuro del navegador */
+[data-testid="stVerticalBlockBorderWrapper"] { background: #fff; border-color: #D5DCE6;
+  border-radius: 14px; }
+.stApp h3, .stApp h3 * { color: #14213D !important; }
+[data-testid="stWidgetLabel"], [data-testid="stWidgetLabel"] *,
+[data-testid="stRadio"] label, [data-testid="stRadio"] label *,
+[data-testid="stRadio"] p { color: #14213D !important; opacity: 1 !important; }
+[data-testid="stRadio"] label p { font-weight: 600; font-size: 1rem; }
+[data-baseweb="input"], [data-baseweb="base-input"], [data-baseweb="input"] input {
+  background: #F6F8FB !important; color: #14213D !important;
+  -webkit-text-fill-color: #14213D !important; border-radius: 8px; }
+[data-testid="stNumberInput"] button { background: #E3E9F1 !important; color: #14213D !important; }
+[data-testid="stNumberInput"] button svg { fill: #14213D !important; }
+[data-testid="stTooltipIcon"] svg { stroke: #4A5873 !important; }
 
 .nota { color: #4A5873; font-size: .88rem; margin-top: 1.6rem; }
 @media (prefers-reduced-motion: no-preference) { .row, .kpi { transition: border-color .15s; } }
